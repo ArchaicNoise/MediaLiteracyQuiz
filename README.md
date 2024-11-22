@@ -1,4 +1,4 @@
-# MediaLiteracy.github.io
+# MediaLiteracyQuiz.github.io
 This Media Literacy Quiz measures individuals' understanding of media on the following five axes: 
 
 <b>Community</b> (Single Player Games vs. Multiplayer Games), 
