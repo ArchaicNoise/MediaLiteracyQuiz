@@ -68,5 +68,5 @@ ideologies = [
             "litr": 0,
             "unio": 0,
         }
-    },
+    }
 ];
