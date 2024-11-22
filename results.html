@@ -1,7 +1,7 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
 <link href='style.css' rel='stylesheet' type='text/css'>
-<title>Media Literacy Results</title>
+<title>Media Literacy Quiz Results</title>
 <link rel="icon" type="x-icon" href="icon.png">
 <link rel="shortcut icon" type="x-icon" href="icon.png">
 <meta charset="utf-8">
@@ -14,7 +14,7 @@
 </script>
 
 <body>
-<h1>Media Literacy</h1>
+<h1>Media Literacy Quiz</h1>
 <hr>
 
 <h1>Results</h1>
@@ -33,7 +33,7 @@
     <div class="bar massproduction" id="bar-massproduction"><div class="text-wrapper" id="massproduction"></div></div>
     <img id="img-massproduction" src="value_images/massproduction.png" height="128pt"/>
 </div>
-<h2>Uniqueness Axis: <span class="weight-300" id="uniqueness-label"></span></h2>
+<h2>Idiosyncracies Axis: <span class="weight-300" id="idiosyncracies-label"></span></h2>
 <div class="axis">
     <img id="img-uniquestories" src="value_images/uniquestories.png" height="128pt"/>
     <div class="bar uniquestories" id="bar-uniquestories"><div class="text-wrapper" id="uniquestories"></div></div>
@@ -141,7 +141,7 @@ stats"></a></div></noscript>
 
     document.getElementById("community-label").innerHTML = setLabel(singleplayer, singArray)
     document.getElementById("art-label").innerHTML = setLabel(fineart, fineArray)
-    document.getElementById("uniquness-label").innerHTML = setLabel(uniquestories, uniqArray)
+    document.getElementById("idiosyncracies-label").innerHTML = setLabel(uniquestories, uniqArray)
     document.getElementById("progressivism-label").innerHTML = setLabel(literate, litrArray)
     document.getElementById("workersrights-label").innerHTML = setLabel(unionization, unioArray)
 
@@ -252,7 +252,7 @@ stats"></a></div></noscript>
         ctx.textAlign="center"
         ctx.fillText("Community Axis: " + document.getElementById("community-label").innerHTML, 400, 175)
         ctx.fillText("Art Axis: " + document.getElementById("art-label").innerHTML, 400, 295)
-        ctx.fillText("Uniqueness Axis: " + document.getElementById("uniqueness-label").innerHTML, 400, 415)
+        ctx.fillText("Idiosyncracies Axis: " + document.getElementById("idiosyncracies-label").innerHTML, 400, 415)
         ctx.fillText("Progressivism Axis: " + document.getElementById("progressivism-label").innerHTML, 400, 535)
         ctx.fillText("Worker's Rights Axis: " + document.getElementById("workersrights-label").innerHTML, 400, 535)
 
