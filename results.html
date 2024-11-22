@@ -15,6 +15,9 @@
 
 <body>
 <h1>Media Literacy Quiz</h1>
+<h1> id="version">v. Alpha 0.9</h1>
+<h3>by Archaic Noise</h3>
+	
 <hr>
 
 <h1>Results</h1>
@@ -56,11 +59,12 @@
 </div>
 <br> </br>
 <h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
-<p>Ideological matching is a work in progress, and is much less accurate than the values and axes.</p>
-<p>You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your matched ideology was wrong? Want to help us calibrate the test? Contact me at @archaicnoise.bsky.social with your results and a comment.</p>
+<p>Ideological Matches are subject to change.</p>
+<p>You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your results were wrong? Want to help calibrate the test? Contact me at @archaicnoise.bsky.social with your results and a comment.</p>
 <hr/>
 <img src="" id="banner">
 <button class="button" onclick="location.href='index.html';">Back</button> <br>
+	
 <!-- Website visit statistics - no personal information is collected! -->
 <script type="text/javascript">
 var sc_project=11325211;
@@ -78,6 +82,7 @@ class="statcounter"
 src="//c.statcounter.com/11325211/0/fd9f0659/1/" alt="web
 stats"></a></div></noscript>
 <script>
+	
     function getQueryVariable(variable)
     {
            var query = window.location.search.substring(1)
@@ -99,11 +104,11 @@ stats"></a></div></noscript>
         }
     }
 
-    singArray = ["Artist", "Literate"]
-    fineArray = ["Artist", "Developer"]
-    uniqArray = ["Artist", "Manager"]
-    litrArray = ["Artist", "Gamergater", "Literate", "Artificial Intelligence Fan"]
-    unioArray = ["Developer"]
+    singArray = ["Artificial Intelligence Fan", "Artist", "Consumer", "Developer", "Gamergater", "Literate", "Manager"]
+    fineArray = ["Artificial Intelligence Fan", "Artist", "Consumer", "Developer", "Gamergater", "Literate", "Manager"]
+    uniqArray = ["Artificial Intelligence Fan", "Artist", "Consumer", "Developer", "Gamergater", "Literate", "Manager"]
+    litrArray = ["Artificial Intelligence Fan", "Artist", "Consumer", "Developer", "Gamergater", "Literate", "Manager"]
+    unioArray = ["Artificial Intelligence Fan", "Artist", "Consumer", "Developer", "Gamergater", "Literate", "Manager"]
 	
     function setLabel(val,ary) {
         if (val > 100) { return "" } else
@@ -153,7 +158,7 @@ stats"></a></div></noscript>
         dist += Math.pow(Math.abs(ideologies[i].stats.fine - fineart), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.uniq - uniquestories), 1.73856063)
         dist += Math.pow(Math.abs(ideologies[i].stats.litr - literate), 1.73856063)
-	dist += Math.pow(Math.abs(ideologies[i].stats.litr - unionization), 2)
+	dist += Math.pow(Math.abs(ideologies[i].stats.litr - unionization), 1.73856063)
         if (dist < ideodist) {
             ideology = ideologies[i].name
             ideodist = dist
@@ -204,26 +209,25 @@ stats"></a></div></noscript>
         ctx.fillRect(120, 420, 560, 80)
         ctx.fillRect(120, 540, 560, 80)
         ctx.fillRect(120, 660, 560, 80)
-        ctx.fillStyle="#f44336"
-        ctx.fillRect(120, 184, 5.6*singleplayer-2, 72)
-        ctx.fillStyle="#00897b"
-        ctx.fillRect(682-5.6*multiplayer, 184, 5.6*multiplayer-2, 72)
-        ctx.fillStyle="#ff9800"
-        ctx.fillRect(120, 304, 5.6*fineart-2, 72)
-        ctx.fillStyle="#03a9f4"
-        ctx.fillRect(682-5.6*massproduction, 304, 5.6*massproduction-2, 72)
-        ctx.fillStyle="#ffeb3b"
-        ctx.fillRect(120, 424, 5.6*uniquestories-2, 72)
         ctx.fillStyle="#3f51b5"
+        ctx.fillRect(120, 184, 5.6*singleplayer-2, 72)
+        ctx.fillStyle="#f44336"
+        ctx.fillRect(682-5.6*multiplayer, 184, 5.6*multiplayer-2, 72)
+        ctx.fillStyle="#005f73"
+        ctx.fillRect(120, 304, 5.6*fineart-2, 72)
+        ctx.fillStyle="#ee9b00"
+        ctx.fillRect(682-5.6*massproduction, 304, 5.6*massproduction-2, 72)
+        ctx.fillStyle="#0a9396"
+        ctx.fillRect(120, 424, 5.6*uniquestories-2, 72)
+        ctx.fillStyle="#ca6702"
         ctx.fillRect(682-5.6*proceduralgeneration, 424, 5.6*proceduralgeneration-2, 72)
-        ctx.fillStyle="#8bc34a"
+        ctx.fillStyle="#91ceb9"
         ctx.fillRect(120, 544, 5.6*literate-2, 72)
-        ctx.fillStyle="#9c27b0"
+        ctx.fillStyle="#bb3e03"
         ctx.fillRect(682-5.6*reactionary, 544, 5.6*reactionary-2, 72)
-        ctx.fillStyle="#222222"
-	    
+        ctx.fillStyle="#e9d8a6"
         ctx.fillRect(120, 544, 5.6*unionization-2, 72)
-        ctx.fillStyle="#9c27b0"
+        ctx.fillStyle="#9b2226"
         ctx.fillRect(682-5.6*corporateconsolidation, 544, 5.6*corporateconsolidation-2, 72)
         ctx.fillStyle="#222222"
 	    
@@ -236,9 +240,9 @@ stats"></a></div></noscript>
         ctx.textAlign="left"
         if (singleplayer   > 30) {ctx.fillText(singleplayer + "%", 130, 237.5)}
         if (fineart        > 30) {ctx.fillText(fineart + "%", 130, 357.5)}
-        if (uniquestories  > 30) {ctx.fillText(liberty + "%", 130, 477.5)}
+        if (uniquestories  > 30) {ctx.fillText(uniquestories + "%", 130, 477.5)}
         if (literate       > 30) {ctx.fillText(literate + "%", 130, 597.5)}
-        if (unionization   > 30) {ctx.fillText(literate + "%", 130, 717.5)}
+        if (unionization   > 30) {ctx.fillText(unionization + "%", 130, 717.5)}
         ctx.textAlign="right"
         if (multiplayer            > 30) {ctx.fillText(multiplayer + "%", 670, 237.5)}
         if (massproduction         > 30) {ctx.fillText(massproduction + "%", 670, 357.5)}
@@ -247,7 +251,7 @@ stats"></a></div></noscript>
         if (corporateconsolidation > 30) {ctx.fillText(corporateconsolidation + "%", 670, 717.5)}
 
         ctx.font="300 30px Montserrat"
-        ctx.fillText("MediaLiteracy.github.io", 780, 60)
+        ctx.fillText("MediaLiteracyQuiz.github.io", 780, 60)
 		ctx.fillText(version, 780, 90)
         ctx.textAlign="center"
         ctx.fillText("Community Axis: " + document.getElementById("community-label").innerHTML, 400, 175)
