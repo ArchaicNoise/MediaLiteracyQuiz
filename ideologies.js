@@ -10,6 +10,16 @@ ideologies = [
         }
     },
     {
+        "name": "Consumer",
+        "stats": {
+            "sing": 0,
+            "fine": 0,
+            "uniq": 100,
+            "litr": 0,
+            "unio": 0,
+        }
+    },
+    {
         "name": "Artificial Intelligence Fan",
         "stats": {
             "sing": 100,
