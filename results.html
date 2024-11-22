@@ -1,0 +1,262 @@
+<head>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
+<link href='style.css' rel='stylesheet' type='text/css'>
+<title>Media Literacy Results</title>
+<link rel="icon" type="x-icon" href="icon.png">
+<link rel="shortcut icon" type="x-icon" href="icon.png">
+<meta charset="utf-8">
+<script>
+  version = "Test Edition #1" //Remember to update this before making changes to the test itself!
+</script>
+</head>
+<script type="application/javascript"
+        src="ideologies.js">
+</script>
+
+<body>
+<h1>Media Literacy</h1>
+<hr>
+
+<h1>Results</h1>
+
+<h2>Community Axis: <span class="weight-300" id="community-label"></span></h2>
+<div class="axis">
+    <img id="img-singleplayer" src="value_images/singleplayer.png" height="128pt"/>
+    <div class="bar singleplayer" id="bar-singleplayer"><div class="text-wrapper" id="singleplayer"></div></div>
+    <div class="bar multiplayer" id="bar-multiplayer"><div class="text-wrapper" id="multiplayer"></div></div>
+    <img id="img-multiplayer" src="value_images/multiplayer.png" height="128pt"/>
+</div>
+<h2>Art Axis: <span class="weight-300" id="art-label"></span></h2>
+<div class="axis">
+    <img id="img-fineart" src="value_images/fineart.png" height="128pt"/>
+    <div class="bar fineart" id="bar-fineart"><div class="text-wrapper" id="fineart"></div></div>
+    <div class="bar massproduction" id="bar-massproduction"><div class="text-wrapper" id="massproduction"></div></div>
+    <img id="img-massproduction" src="value_images/massproduction.png" height="128pt"/>
+</div>
+<h2>Uniqueness Axis: <span class="weight-300" id="uniqueness-label"></span></h2>
+<div class="axis">
+    <img id="img-uniquestories" src="value_images/uniquestories.png" height="128pt"/>
+    <div class="bar uniquestories" id="bar-uniquestories"><div class="text-wrapper" id="uniquestories"></div></div>
+    <div class="bar proceduralgeneration" id="bar-proceduralgeneration"><div class="text-wrapper" id="proceduralgeneration"></div></div>
+    <img id="img-proceduralgeneration" src="value_images/proceduralgeneration.png" height="128pt"/>
+</div>
+<h2>Progressivism Axis: <span class="weight-300" id="progressivism-label"></span></h2>
+<div class="axis">
+    <img id="img-literate" src="value_images/literate.png" height="128pt"/>
+    <div class="bar literate" id="bar-literate"><div class="text-wrapper" id="literate"></div></div>
+    <div class="bar reactionary" id="bar-reactionary"><div class="text-wrapper" id="reactionary"></div></div>
+    <img id="img-reactionary" src="value_images/reactionary.png" height="128pt"/>
+</div>
+<h2>Workers' Rights Axis: <span class="weight-300" id="workersrights-label"></span></h2>
+<div class="axis">
+    <img id="img-unionization" src="value_images/unionization.png" height="128pt"/>
+    <div class="bar unionization" id="bar-unionization"><div class="text-wrapper" id="unionization"></div></div>
+    <div class="bar corporateconsolidation" id="bar-corporateconsolidation"><div class="text-wrapper" id="corporateconsolidation"></div></div>
+    <img id="img-corporateconsolidation" src="value_images/corporateconsolidation.png" height="128pt"/>
+</div>
+<br> </br>
+<h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
+<p>Ideological matching is a work in progress, and is much less accurate than the values and axes.</p>
+<p>You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your matched ideology was wrong? Want to help us calibrate the test? Contact me at @archaicnoise.bsky.social with your results and a comment.</p>
+<hr/>
+<img src="" id="banner">
+<button class="button" onclick="location.href='index.html';">Back</button> <br>
+<!-- Website visit statistics - no personal information is collected! -->
+<script type="text/javascript">
+var sc_project=11325211;
+var sc_invisible=1;
+var sc_security="fd9f0659";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web stats"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11325211/0/fd9f0659/1/" alt="web
+stats"></a></div></noscript>
+<script>
+    function getQueryVariable(variable)
+    {
+           var query = window.location.search.substring(1)
+           var vars = query.split("&")
+           for (var i=0;i<vars.length;i++) {
+                   var pair = vars[i].split("=")
+                   if(pair[0] == variable) {return pair[1]}
+           }
+           return(NaN);
+    }
+
+    function setBarValue(name, value) {
+        innerel = document.getElementById(name)
+        outerel = document.getElementById("bar-" + name)
+        outerel.style.width = (value + "%")
+        innerel.innerHTML = (value + "%")
+        if (innerel.offsetWidth + 20 > outerel.offsetWidth) {
+            innerel.style.visibility = "hidden"
+        }
+    }
+
+    singArray = ["Artist", "Literate"]
+    fineArray = ["Artist", "Developer"]
+    uniqArray = ["Artist", "Manager"]
+    litrArray = ["Artist", "Gamergater", "Literate", "Artificial Intelligence Fan"]
+    unioArray = ["Developer"]
+	
+    function setLabel(val,ary) {
+        if (val > 100) { return "" } else
+        if (val > 90) { return ary[0] } else
+        if (val > 75) { return ary[1] } else
+        if (val > 60) { return ary[2] } else
+        if (val >= 40) { return ary[3] } else
+        if (val >= 25) { return ary[4] } else
+        if (val >= 10) { return ary[5] } else
+        if (val >= 0) { return ary[6] } else
+        	{return ""}
+    }
+
+    singleplayer  = getQueryVariable("e")
+    fineart       = getQueryVariable("d")
+    uniquestories = getQueryVariable("g")
+    literate      = getQueryVariable("s")
+    unionization  = getQueryVariable("f")
+    multiplayer            = (100 - singleplayer  ).toFixed(1)
+    massproduction         = (100 - fineart       ).toFixed(1)
+    proceduralgeneration   = (100 - uniquestories ).toFixed(1)
+    reactionary            = (100 - literate      ).toFixed(1)
+    corporateconsolidation = (100 - unionization  ).toFixed(1)
+
+    setBarValue("singleplayer", singleplayer)
+    setBarValue("multiplayer", multiplayer)
+    setBarValue("fineart", fineart)
+    setBarValue("massproduction", mass production)
+    setBarValue("uniquestories", uniquestories)
+    setBarValue("proceduralgeneration", proceduralgeneration)
+    setBarValue("literate", literate)
+    setBarValue("reactionary", reactionary)
+    setBarValue("unionization", unionization)
+    setBarValue("corporateconsolidation", corporateconsolidation)
+
+    document.getElementById("community-label").innerHTML = setLabel(singleplayer, singArray)
+    document.getElementById("art-label").innerHTML = setLabel(fineart, fineArray)
+    document.getElementById("uniquness-label").innerHTML = setLabel(uniquestories, uniqArray)
+    document.getElementById("progressivism-label").innerHTML = setLabel(literate, litrArray)
+    document.getElementById("workersrights-label").innerHTML = setLabel(unionization, unioArray)
+
+    ideology = ""
+    ideodist = Infinity
+    for (var i = 0; i < ideologies.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(ideologies[i].stats.sing - singleplayer), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.fine - fineart), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.uniq - uniquestories), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.litr - literate), 1.73856063)
+	dist += Math.pow(Math.abs(ideologies[i].stats.litr - unionization), 2)
+        if (dist < ideodist) {
+            ideology = ideologies[i].name
+            ideodist = dist
+        }
+    }
+    document.getElementById("ideology-label").innerHTML = ideology
+
+    function createImage(src, x, y, w, h) {
+        img = new Image ()
+        img.src = src
+        img.onLoad = function() {
+            ctx.drawImage(img, x, y, w, h)
+        }
+    }
+
+    window.onload = function() {
+        var c = document.createElement("canvas")
+        var ctx = c.getContext("2d")
+        c.width = 800;
+        c.height = 650;
+        ctx.fillStyle = "#EEEEEE"
+        ctx.fillRect(0,0,800,650);
+
+        img = document.getElementById("img-singleplayer")
+        ctx.drawImage(img, 20, 170, 100, 100);
+        img = document.getElementById("img-multiplayer")
+        ctx.drawImage(img, 680, 170, 100, 100)
+        img = document.getElementById("img-fineart")
+        ctx.drawImage(img, 20, 290, 100, 100)
+        img = document.getElementById("img-massproduction")
+        ctx.drawImage(img, 680, 290, 100, 100)
+        img = document.getElementById("img-uniquestories")
+        ctx.drawImage(img, 20, 410, 100, 100)
+        img = document.getElementById("img-procedural generation")
+        ctx.drawImage(img, 680, 410, 100, 100)
+        img = document.getElementById("img-literate")
+        ctx.drawImage(img, 20, 530, 100, 100)
+        img = document.getElementById("img-reactionary")
+        ctx.drawImage(img, 680, 530, 100, 100)
+        img = document.getElementById("img-unionization")
+        ctx.drawImage(img, 20, 650, 100, 100)
+        img = document.getElementById("img-corporateconsolidation")
+        ctx.drawImage(img, 680, 650, 100, 100)
+
+        ctx.fillStyle="#222222"
+        ctx.fillRect(120, 180, 560, 80)
+        ctx.fillRect(120, 300, 560, 80)
+        ctx.fillRect(120, 420, 560, 80)
+        ctx.fillRect(120, 540, 560, 80)
+        ctx.fillRect(120, 660, 560, 80)
+        ctx.fillStyle="#f44336"
+        ctx.fillRect(120, 184, 5.6*singleplayer-2, 72)
+        ctx.fillStyle="#00897b"
+        ctx.fillRect(682-5.6*multiplayer, 184, 5.6*multiplayer-2, 72)
+        ctx.fillStyle="#ff9800"
+        ctx.fillRect(120, 304, 5.6*fineart-2, 72)
+        ctx.fillStyle="#03a9f4"
+        ctx.fillRect(682-5.6*massproduction, 304, 5.6*massproduction-2, 72)
+        ctx.fillStyle="#ffeb3b"
+        ctx.fillRect(120, 424, 5.6*uniquestories-2, 72)
+        ctx.fillStyle="#3f51b5"
+        ctx.fillRect(682-5.6*proceduralgeneration, 424, 5.6*proceduralgeneration-2, 72)
+        ctx.fillStyle="#8bc34a"
+        ctx.fillRect(120, 544, 5.6*literate-2, 72)
+        ctx.fillStyle="#9c27b0"
+        ctx.fillRect(682-5.6*reactionary, 544, 5.6*reactionary-2, 72)
+        ctx.fillStyle="#222222"
+	    
+        ctx.fillRect(120, 544, 5.6*unionization-2, 72)
+        ctx.fillStyle="#9c27b0"
+        ctx.fillRect(682-5.6*corporateconsolidation, 544, 5.6*corporateconsolidation-2, 72)
+        ctx.fillStyle="#222222"
+	    
+        ctx.font="700 80px Montserrat"
+        ctx.textAlign="left"
+        ctx.fillText("Media Literacy", 20, 90)
+        ctx.font="50px Montserrat"
+        ctx.fillText(ideology, 20, 140)
+
+        ctx.textAlign="left"
+        if (singleplayer   > 30) {ctx.fillText(singleplayer + "%", 130, 237.5)}
+        if (fineart        > 30) {ctx.fillText(fineart + "%", 130, 357.5)}
+        if (uniquestories  > 30) {ctx.fillText(liberty + "%", 130, 477.5)}
+        if (literate       > 30) {ctx.fillText(literate + "%", 130, 597.5)}
+        if (unionization   > 30) {ctx.fillText(literate + "%", 130, 717.5)}
+        ctx.textAlign="right"
+        if (multiplayer            > 30) {ctx.fillText(multiplayer + "%", 670, 237.5)}
+        if (massproduction         > 30) {ctx.fillText(massproduction + "%", 670, 357.5)}
+        if (proceduralgeneration   > 30) {ctx.fillText(proceduralgeneration + "%", 670, 477.5)}
+        if (reactionary            > 30) {ctx.fillText(reactionary + "%", 670, 597.5)}
+        if (corporateconsolidation > 30) {ctx.fillText(corporateconsolidation + "%", 670, 717.5)}
+
+        ctx.font="300 30px Montserrat"
+        ctx.fillText("MediaLiteracy.github.io", 780, 60)
+		ctx.fillText(version, 780, 90)
+        ctx.textAlign="center"
+        ctx.fillText("Community Axis: " + document.getElementById("community-label").innerHTML, 400, 175)
+        ctx.fillText("Art Axis: " + document.getElementById("art-label").innerHTML, 400, 295)
+        ctx.fillText("Uniqueness Axis: " + document.getElementById("uniqueness-label").innerHTML, 400, 415)
+        ctx.fillText("Progressivism Axis: " + document.getElementById("progressivism-label").innerHTML, 400, 535)
+        ctx.fillText("Worker's Rights Axis: " + document.getElementById("workersrights-label").innerHTML, 400, 535)
+
+        document.getElementById("banner").src = c.toDataURL();
+    }
+    </script>
+</body>
