@@ -11,4 +11,4 @@ This Media Literacy Quiz measures individuals' understanding of media on the fol
 
 <b>Workers' Rights</b> (Unionization vs. Corporate Consolidation).
 
-This is a fork of the original 8values quiz, which can be found at 8values.github.io.
+This is adapted from the original 8values quiz, which can be found at 8values.github.io.
