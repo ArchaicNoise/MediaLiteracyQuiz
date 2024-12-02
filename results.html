@@ -26,38 +26,38 @@
 
 <h2>Community Axis: <span class="weight-300" id="community-label"></span></h2>
 <div class="axis">
-    <img id="img-singleplayer" src="value_images/singleplayer.png" height="128pt"/>
-    <div class="bar singleplayer" id="bar-singleplayer"><div class="text-wrapper" id="singleplayer"></div></div>
-    <div class="bar multiplayer" id="bar-multiplayer"><div class="text-wrapper" id="multiplayer"></div></div>
     <img id="img-multiplayer" src="value_images/multiplayer.png" height="128pt"/>
+    <div class="bar multiplayer" id="bar-multiplayer"><div class="text-wrapper" id="multiplayer"></div></div>
+    <div class="bar singleplayer" id="bar-singleplayer"><div class="text-wrapper" id="singleplayer"></div></div>
+    <img id="img-singleplayer" src="value_images/singleplayer.png" height="128pt"/>
 </div>
 <h2>Art Axis: <span class="weight-300" id="art-label"></span></h2>
 <div class="axis">
-    <img id="img-fineart" src="value_images/fineart.png" height="128pt"/>
-    <div class="bar fineart" id="bar-fineart"><div class="text-wrapper" id="fineart"></div></div>
-    <div class="bar massproduction" id="bar-massproduction"><div class="text-wrapper" id="massproduction"></div></div>
     <img id="img-massproduction" src="value_images/massproduction.png" height="128pt"/>
+    <div class="bar massproduction" id="bar-massproduction"><div class="text-wrapper" id="massproduction"></div></div>
+    <div class="bar fineart" id="bar-fineart"><div class="text-wrapper" id="fineart"></div></div>
+    <img id="img-fineart" src="value_images/fineart.png" height="128pt"/>
 </div>
 <h2>Idiosyncracies Axis: <span class="weight-300" id="idiosyncracies-label"></span></h2>
 <div class="axis">
-    <img id="img-uniquestories" src="value_images/uniquestories.png" height="128pt"/>
-    <div class="bar uniquestories" id="bar-uniquestories"><div class="text-wrapper" id="uniquestories"></div></div>
-    <div class="bar proceduralgeneration" id="bar-proceduralgeneration"><div class="text-wrapper" id="proceduralgeneration"></div></div>
     <img id="img-proceduralgeneration" src="value_images/proceduralgeneration.png" height="128pt"/>
+    <div class="bar proceduralgeneration" id="bar-proceduralgeneration"><div class="text-wrapper" id="proceduralgeneration"></div></div>
+    <div class="bar uniquestories" id="bar-uniquestories"><div class="text-wrapper" id="uniquestories"></div></div>
+    <img id="img-uniquestories" src="value_images/uniquestories.png" height="128pt"/>
 </div>
 <h2>Progressivism Axis: <span class="weight-300" id="progressivism-label"></span></h2>
 <div class="axis">
-    <img id="img-literate" src="value_images/literate.png" height="128pt"/>
-    <div class="bar literate" id="bar-literate"><div class="text-wrapper" id="literate"></div></div>
-    <div class="bar reactionary" id="bar-reactionary"><div class="text-wrapper" id="reactionary"></div></div>
     <img id="img-reactionary" src="value_images/reactionary.png" height="128pt"/>
+    <div class="bar reactionary" id="bar-reactionary"><div class="text-wrapper" id="reactionary"></div></div>
+    <div class="bar literate" id="bar-literate"><div class="text-wrapper" id="literate"></div></div>
+    <img id="img-literate" src="value_images/literate.png" height="128pt"/>
 </div>
 <h2>Workers' Rights Axis: <span class="weight-300" id="workersrights-label"></span></h2>
 <div class="axis">
-    <img id="img-unionization" src="value_images/unionization.png" height="128pt"/>
-    <div class="bar unionization" id="bar-unionization"><div class="text-wrapper" id="unionization"></div></div>
-    <div class="bar corporateconsolidation" id="bar-corporateconsolidation"><div class="text-wrapper" id="corporateconsolidation"></div></div>
     <img id="img-corporateconsolidation" src="value_images/corporateconsolidation.png" height="128pt"/>
+    <div class="bar corporateconsolidation" id="bar-corporateconsolidation"><div class="text-wrapper" id="corporateconsolidation"></div></div>
+    <div class="bar unionization" id="bar-unionization"><div class="text-wrapper" id="unionization"></div></div>
+    <img id="img-unionization" src="value_images/unionization.png" height="128pt"/>
 </div>
 <br> </br>
 <h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
@@ -90,11 +90,11 @@
         }
     }
 
-    singArray = ["Gamergater","Artificial Intelligence Fan","Marvel Enjoyer","Consumer","Literate","Artist","Developer"]
-    fineArray = ["Manager","Gamergater","Artificial Intelligence Fan","Consumer","Literate","Artist","Developer"]
-    uniqArray = ["Manager","Gamergater","Capitalist","Artificial Intelligence Fan","Literate","Artist","Developer"]
-    litrArray = ["Fascist","Manager","Gamergater","Consumer","Reader","Literate","Artist"]
-    unioArray = ["Manager","Gamergater","Scab","Consumer","Union Ally","Union Worker","Union Boss"]
+    singArray = ["Developer","Artist","Literate","Consumer","Marvel Enjoyer","Artificial Intelligence Fan","Gamergater"]
+    fineArray = ["Developer","Artist","Literate","Consumer","Artificial Intelligence Fan","Gamergater","Manager"]
+    uniqArray = ["Developer","Artist","Literate","Artificial Intelligence Fan","Capitalist","Gamergater","Manager"]
+    litrArray = ["Artist","Literate","Reader","Consumer","Gamergater","Manager","Fascist"]
+    unioArray = ["Union Boss","Union Worker","Union Ally","Consumer","Scab","Gamergater","Manager"]
 	
     function setLabel(val,ary) {
         if (val > 100) { return "" } else
