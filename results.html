@@ -216,13 +216,13 @@
         ctx.fillStyle="#e9d8a6"
         ctx.fillRect(682-5.6*unionization, 664, 5.6*unionization-2, 72)
         ctx.fillStyle="#222222"
-        ctx.font="700 55px Montserrat"
-        ctx.textAlign="left"
+        ctx.font="700 60px Montserrat"
+        ctx.textAlign="center"
         ctx.fillText("Media Literacy", 20, 60)
-        ctx.font="40px Montserrat"
-        ctx.fillText(ideology, 20, 110)
+        ctx.font="45px Montserrat"
+        ctx.fillText(ideology, 20, 125)
 
-        ctx.textAlign="left"
+	ctx.textAlign="left"    
         if (multiplayer            > 30) {ctx.fillText(multiplayer + "%", 130, 237.5)}
         if (massproduction         > 30) {ctx.fillText(massproduction + "%", 130, 357.5)}
         if (proceduralgeneration   > 30) {ctx.fillText(proceduralgeneration + "%", 130, 477.5)}
@@ -236,8 +236,8 @@
         if (unionization  > 30) {ctx.fillText(unionization + "%", 670, 717.5)}
 
         ctx.font="300 20px Montserrat"
-        ctx.fillText("archaicnoise.github.io/MediaLiteracyQuiz", 780, 95)
-		ctx.fillText(version, 780, 125)
+        ctx.fillText("archaicnoise.github.io/MediaLiteracyQuiz", 780, 105)
+		ctx.fillText(version, 780, 135)
         ctx.textAlign="center"
         ctx.fillText("Community Axis: " + document.getElementById("community-label").innerHTML, 400, 175)
         ctx.fillText("Art Axis: " + document.getElementById("art-label").innerHTML, 400, 295)
