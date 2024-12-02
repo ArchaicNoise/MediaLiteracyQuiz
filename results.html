@@ -62,7 +62,7 @@
 <br> </br>
 <h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
 <p>Ideological Matches are subject to change.</p>
-<p>You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your results were wrong? Want to help calibrate the test? Contact me at @archaicnoise.bsky.social with your results and a comment.</p>
+<p>You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your results were wrong? Want to help calibrate the test? Contact me at <a href="https://bsky.app/profile/archaicnoise.bsky.social">@archaicnoise.bsky.social</a> with your results and a comment.</p>
 <hr/>
 <img src="" id="banner">
 <button class="button" onclick="location.href='index.html';">Back</button> <br>
@@ -168,25 +168,25 @@
         ctx.fillStyle = "#EEEEEE"
         ctx.fillRect(0,0,800,800);
 
-        img = document.getElementById("img-singleplayer")
-        ctx.drawImage(img, 20, 170, 100, 100);
         img = document.getElementById("img-multiplayer")
+        ctx.drawImage(img, 20, 170, 100, 100);
+        img = document.getElementById("img-singleplayer")
         ctx.drawImage(img, 680, 170, 100, 100)
-        img = document.getElementById("img-fineart")
-        ctx.drawImage(img, 20, 290, 100, 100)
         img = document.getElementById("img-massproduction")
+        ctx.drawImage(img, 20, 290, 100, 100)
+        img = document.getElementById("img-fineart")
         ctx.drawImage(img, 680, 290, 100, 100)
-        img = document.getElementById("img-uniquestories")
-        ctx.drawImage(img, 20, 410, 100, 100)
         img = document.getElementById("img-proceduralgeneration")
+        ctx.drawImage(img, 20, 410, 100, 100)
+        img = document.getElementById("img-uniquestories")
         ctx.drawImage(img, 680, 410, 100, 100)
-        img = document.getElementById("img-literate")
-        ctx.drawImage(img, 20, 530, 100, 100)
         img = document.getElementById("img-reactionary")
+        ctx.drawImage(img, 20, 530, 100, 100)
+        img = document.getElementById("img-literate")
         ctx.drawImage(img, 680, 530, 100, 100)
-        img = document.getElementById("img-unionization")
-        ctx.drawImage(img, 20, 650, 100, 100)
         img = document.getElementById("img-corporateconsolidation")
+        ctx.drawImage(img, 20, 650, 100, 100)
+        img = document.getElementById("img-unionization")
         ctx.drawImage(img, 680, 650, 100, 100)
 
         ctx.fillStyle="#222222"
@@ -195,26 +195,26 @@
         ctx.fillRect(120, 420, 560, 80)
         ctx.fillRect(120, 540, 560, 80)
         ctx.fillRect(120, 660, 560, 80)
-        ctx.fillStyle="#3f51b5"
-        ctx.fillRect(120, 184, 5.6*singleplayer-2, 72)
         ctx.fillStyle="#f44336"
-        ctx.fillRect(682-5.6*multiplayer, 184, 5.6*multiplayer-2, 72)
-        ctx.fillStyle="#005f73"
-        ctx.fillRect(120, 304, 5.6*fineart-2, 72)
+        ctx.fillRect(120, 184, 5.6*multiplayer-2, 72)
+        ctx.fillStyle="#3f51b5"
+        ctx.fillRect(682-5.6*singleplayer, 184, 5.6*singleplayer-2, 72)
         ctx.fillStyle="#ee9b00"
-        ctx.fillRect(682-5.6*massproduction, 304, 5.6*massproduction-2, 72)
-        ctx.fillStyle="#0a9396"
-        ctx.fillRect(120, 424, 5.6*uniquestories-2, 72)
+        ctx.fillRect(120, 304, 5.6*massproduction-2, 72)
+        ctx.fillStyle="#005f73"
+        ctx.fillRect(682-5.6*fineart, 304, 5.6*fineart-2, 72)
         ctx.fillStyle="#ca6702"
-        ctx.fillRect(682-5.6*proceduralgeneration, 424, 5.6*proceduralgeneration-2, 72)
-        ctx.fillStyle="#91ceb9"
-        ctx.fillRect(120, 544, 5.6*literate-2, 72)
+        ctx.fillRect(120, 424, 5.6*proceduralgeneration-2, 72)
+        ctx.fillStyle="#0a9396"
+        ctx.fillRect(682-5.6*uniquestories, 424, 5.6*uniquestories-2, 72)
         ctx.fillStyle="#bb3e03"
-        ctx.fillRect(682-5.6*reactionary, 544, 5.6*reactionary-2, 72)
-        ctx.fillStyle="#e9d8a6"
-        ctx.fillRect(120, 664, 5.6*unionization-2, 72)
+        ctx.fillRect(120, 544, 5.6*reactionary-2, 72)
+        ctx.fillStyle="#91ceb9"
+        ctx.fillRect(682-5.6*literate, 544, 5.6*literate-2, 72)
         ctx.fillStyle="#9b2226"
-        ctx.fillRect(682-5.6*corporateconsolidation, 664, 5.6*corporateconsolidation-2, 72)
+        ctx.fillRect(120, 664, 5.6*corporateconsolidation-2, 72)
+        ctx.fillStyle="#e9d8a6"
+        ctx.fillRect(682-5.6*unionization, 664, 5.6*unionization-2, 72)
         ctx.fillStyle="#222222"
         ctx.font="700 80px Montserrat"
         ctx.textAlign="left"
@@ -223,17 +223,17 @@
         ctx.fillText(ideology, 20, 140)
 
         ctx.textAlign="left"
-        if (singleplayer   > 30) {ctx.fillText(singleplayer + "%", 130, 237.5)}
-        if (fineart        > 30) {ctx.fillText(fineart + "%", 130, 357.5)}
-        if (uniquestories  > 30) {ctx.fillText(uniquestories + "%", 130, 477.5)}
-        if (literate       > 30) {ctx.fillText(literate + "%", 130, 597.5)}
-        if (unionization   > 30) {ctx.fillText(unionization + "%", 130, 717.5)}
+        if (multiplayer            > 30) {ctx.fillText(multiplayer + "%", 130, 237.5)}
+        if (massproduction         > 30) {ctx.fillText(massproduction + "%", 130, 357.5)}
+        if (proceduralgeneration   > 30) {ctx.fillText(proceduralgeneration + "%", 130, 477.5)}
+        if (reactionary            > 30) {ctx.fillText(reactionary  + "%", 130, 597.5)}
+        if (corporateconsolidation > 30) {ctx.fillText(corporateconsolidation + "%", 130, 717.5)}
         ctx.textAlign="right"
-        if (multiplayer            > 30) {ctx.fillText(multiplayer + "%", 670, 237.5)}
-        if (massproduction         > 30) {ctx.fillText(massproduction + "%", 670, 357.5)}
-        if (proceduralgeneration   > 30) {ctx.fillText(proceduralgeneration + "%", 670, 477.5)}
-        if (reactionary            > 30) {ctx.fillText(reactionary + "%", 670, 597.5)}
-        if (corporateconsolidation > 30) {ctx.fillText(corporateconsolidation + "%", 670, 717.5)}
+        if (singleplayer  > 30) {ctx.fillText(singleplayer + "%", 670, 237.5)}
+        if (fineart       > 30) {ctx.fillText (fineart + "%", 670, 357.5)}
+        if (uniquestories > 30) {ctx.fillText(uniquestories + "%", 670, 477.5)}
+        if (literate      > 30) {ctx.fillText(literate+ "%", 670, 597.5)}
+        if (unionization  > 30) {ctx.fillText(unionization + "%", 670, 717.5)}
 
         ctx.font="300 30px Montserrat"
         ctx.fillText("MediaLiteracyQuiz.github.io", 780, 60)
