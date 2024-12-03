@@ -237,22 +237,22 @@ div.text-wrapper {
 }
 div.singleplayer {
     background-color: #3f51b5;
-    text-align: left;
+    text-align: right;
     border-right-style: solid;
 }
 div.multiplayer {
     background-color: #f44336;
-    text-align: right;
+    text-align: left;
     border-left-style: solid;
 }
 div.fineart {
     background-color: #005f73;
-    text-align: left;
+    text-align: right;
     border-right-style: solid;
 }
 div.massproduction {
     background-color: #ee9b00;
-    text-align: right;
+    text-align: left;
     border-left-style: solid;
 }
 div.uniquestories {
