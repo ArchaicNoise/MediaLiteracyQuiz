@@ -25,14 +25,14 @@ questions = [
             "sing": -10,
             "fine": 0,
             "uniq": 0,
-            "litr": 0,
+            "litr": -5,
             "unio": 0
         }
     },
     {
-        "question": "I hate going to the movies alone.",
+        "question": "I prefer going to the movies alone.",
         "effect": {
-            "sing": -10,
+            "sing": 10,
             "fine": 0,
             "uniq": 0,
             "litr": 0,
@@ -53,7 +53,7 @@ questions = [
         "question": "I constantly link my friends and family funny things I find on social media.",
         "effect": {
             "sing": -5,
-            "fine": 0,
+            "fine": -5,
             "uniq": 0,
             "litr": 0,
             "unio": 0
@@ -66,7 +66,7 @@ questions = [
             "fine": 0,
             "uniq": -5,
             "litr": 0,
-            "unio": 0
+            "unio": -10
         }
     },
     {
@@ -74,7 +74,7 @@ questions = [
         "effect": {
             "sing": 5,
             "fine": 0,
-            "uniq": 0,
+            "uniq": 5,
             "litr": 0,
             "unio": 0
         }
@@ -83,7 +83,7 @@ questions = [
         "question": "I hate falling behind on TV shows.",
         "effect": {
             "sing": -5,
-            "fine": 0,
+            "fine": -5,
             "uniq": 0,
             "litr": 0,
             "unio": 0
@@ -102,7 +102,7 @@ questions = [
     {
         "question": "Live service games are the future of video game development.",
         "effect": {
-            "sing": -5,
+            "sing": -10,
             "fine": 0,
             "uniq": 0,
             "litr": 0,
@@ -260,13 +260,13 @@ questions = [
         }
     },
     {
-        "question": "Microtransactions aren't predatory at all.",
+        "question": "Microtransactions are predatory.",
         "effect": {
             "sing": 0,
-            "fine": -5,
+            "fine": 10,
             "uniq": 0,
             "litr": 0,
-            "unio": -5
+            "unio": 10
         }
     },
     {
@@ -276,7 +276,7 @@ questions = [
             "fine": 10,
             "uniq": 0,
             "litr": 0,
-            "unio": 0
+            "unio": 5
         }
     },
     {
@@ -362,7 +362,7 @@ questions = [
     {
         "question": "More customization options makes a game more fun.",
         "effect": {
-            "sing": 0,
+            "sing": -5,
             "fine": 0,
             "uniq": -5,
             "litr": 0,
@@ -374,7 +374,7 @@ questions = [
         "effect": {
             "sing": 0,
             "fine": 0,
-            "uniq": 5,
+            "uniq": -10,
             "litr": 0,
             "unio": 0
         }
@@ -433,7 +433,7 @@ questions = [
         "question": "Making an in-game encyclopedia or lore guide is a waste of development time.",
         "effect": {
             "sing": 0,
-            "fine": 0,
+            "fine": -5,
             "uniq": -5,
             "litr": 0,
             "unio": 0
@@ -453,7 +453,7 @@ questions = [
         "question": "I hate it when video games, shows, and movies re-use assets.",
         "effect": {
             "sing": 0,
-            "fine": 0,
+            "fine": -5,
             "uniq": -5,
             "litr": 0,
             "unio": 0
@@ -463,7 +463,7 @@ questions = [
         "question": "How media makes me feel is more important than how it flows logically.",
         "effect": {
             "sing": 0,
-            "fine": 0,
+            "fine": -5,
             "uniq": 0,
             "litr": -5,
             "unio": 0
@@ -473,7 +473,7 @@ questions = [
         "question": "I think criticism is a waste of time.",
         "effect": {
             "sing": 0,
-            "fine": 0,
+            "fine": -5,
             "uniq": 0,
             "litr": -5,
             "unio": 0
@@ -482,7 +482,7 @@ questions = [
     {
         "question": "I don't like having to think when I watch a show or play a video game.",
         "effect": {
-            "sing": 0,
+            "sing": -5,
             "fine": 0,
             "uniq": 0,
             "litr": -5,
@@ -502,7 +502,7 @@ questions = [
     {
         "question": "I refuse to watch anything with subtitles.",
         "effect": {
-            "sing": 0,
+            "sing": -5,
             "fine": 0,
             "uniq": 0,
             "litr": -5,
@@ -512,7 +512,7 @@ questions = [
     {
         "question": "I refuse to watch anything in black and white.",
         "effect": {
-            "sing": 0,
+            "sing": -5,
             "fine": 0,
             "uniq": 0,
             "litr": -5,
@@ -525,14 +525,14 @@ questions = [
             "sing": 0,
             "fine": 0,
             "uniq": 0,
-            "litr": -5,
+            "litr": -10,
             "unio": 0
         }
     },
     {
         "question": "I listen to every genre except Country and Hip-Hop.",
         "effect": {
-            "sing": 0,
+            "sing": -5,
             "fine": 0,
             "uniq": 0,
             "litr": -5,
@@ -570,11 +570,11 @@ questions = [
         }
     },
     {
-        "question": "DEI is ruining all my favorite shows and games.",
+        "question": "DEI (Diversity, Equity, & Inclusion) is ruining all my favorite shows and games.",
         "effect": {
-            "sing": 0,
-            "fine": 0,
-            "uniq": 0,
+            "sing": -5,
+            "fine": -5,
+            "uniq": -5,
             "litr": -5,
             "unio": -5
         }
@@ -582,7 +582,7 @@ questions = [
     {
         "question": "Stories about people who don't look and sound like me aren't worth watching.",
         "effect": {
-            "sing": 0,
+            "sing": -5,
             "fine": 0,
             "uniq": 0,
             "litr": -5,
@@ -595,7 +595,7 @@ questions = [
             "sing": 0,
             "fine": 0,
             "uniq": 0,
-            "litr": -5,
+            "litr": -10,
             "unio": 0
         }
     },
@@ -663,7 +663,7 @@ questions = [
         "question": "Unionizing a workplace usually means the art that company makes will be diminished in some capacity.",
         "effect": {
             "sing": 0,
-            "fine": 0,
+            "fine": -5,
             "uniq": 0,
             "litr": 0,
             "unio": -10
@@ -692,7 +692,7 @@ questions = [
     {
         "question": "I would rather have one big streaming service than 10 smaller ones.",
         "effect": {
-            "sing": 0,
+            "sing": -5,
             "fine": 0,
             "uniq": 0,
             "litr": 0,
